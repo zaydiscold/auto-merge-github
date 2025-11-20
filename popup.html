@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Merge Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Auto-Merge</h1>
+      <div class="status-indicator" id="statusIndicator"></div>
+    </div>
+    
+    <div class="control-group">
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" checked>
+        <span class="slider round"></span>
+      </label>
+      <span class="label-text">Enable Auto-Merge</span>
+    </div>
+
+    <div class="footer">
+      <p>Automatically confirms merges and deletes branches.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
