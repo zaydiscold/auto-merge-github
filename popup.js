@@ -19,9 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateStatus(enabled) {
         if (enabled) {
-            statusIndicator.classList.remove('disabled');
+            statusIndicator.textContent = "SYSTEM: ACTIVE";
+            statusIndicator.style.backgroundColor = "#ffffff";
+            statusIndicator.style.color = "#000000";
         } else {
-            statusIndicator.classList.add('disabled');
+            statusIndicator.textContent = "SYSTEM: IDLE";
+            statusIndicator.style.backgroundColor = "#000000";
+            statusIndicator.style.color = "#ffffff";
         }
     }
 });
